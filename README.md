@@ -13,3 +13,9 @@ update_fw.py is on the client side and updates the client's firewall with new, u
 update_db.py is on the server side and updates the database with new, unique IPs.
 
 get_ips.sh is a shellscript on the server that reads through the firewall logs and takes the source IPs and places them into a text file: hostile_ips.txt
+
+hostile_ips.txt is the output of the program get_ips.sh which are then placed in the database: ip.db.
+
+crontab_server is the crontab on the server that schedules the programs to run at a certain time. 
+crontab_client is the crontab on the client that schedules the programs to run at a certain time
+
